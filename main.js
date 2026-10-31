@@ -1,4 +1,4 @@
-// Portfolio de Oriol Roige: tira de la portada, arrastre de las tiras, vídeos, móvil en vivo, correo y entradas.
+// Portfolio de Oriol Roigé: tira de la portada, arrastre de las tiras, vídeos, móvil en vivo, correo y entradas.
 document.documentElement.classList.add('js');
 
 const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;

@@ -1,4 +1,4 @@
-# Oriol Roige · Portfolio
+# Oriol Roigé · Portfolio
 
 Portfolio de una página con dos proyectos: [Duermevela](https://github.com/oroige/duermevela-trenes-nocturnos), trenes nocturnos, y [Albar](https://github.com/oroige/albar-mercado-de-origen), mercado de origen.
 
