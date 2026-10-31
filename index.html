@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Oriol Roige · Desarrollo front-end</title>
+  <meta name="description" content="Portfolio de Oriol Roige: diseño y programo webs a mano. Dos proyectos completos: Duermevela, trenes nocturnos, y Albar, mercado de origen.">
+  <meta name="theme-color" content="#1f1e1d">
+  <meta property="og:title" content="Oriol Roige · Desarrollo front-end">
+  <meta property="og:description" content="Dos webs completas, diseñadas y programadas a mano.">
+  <meta property="og:image" content="img/duermevela-hero-1440.webp">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://api.fontshare.com">
+  <link rel="preconnect" href="https://cdn.fontshare.com" crossorigin>
+  <link href="https://api.fontshare.com/v2/css?f[]=general-sans@400,500,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#proyectos">Saltar a los proyectos</a>
+
+  <!-- Primera pantalla: nombre, qué hace y la tira con las dos webs -->
+  <header class="hero" id="inicio">
+    <nav class="bar" aria-label="Principal">
+      <a class="bar__name" href="#inicio">Oriol Roige</a>
+      <ul class="bar__links">
+        <li><a href="#proyectos">Proyectos</a></li>
+        <li><a href="#pruebalas">Pruébalas</a></li>
+        <li><a href="#sobre-mi">Sobre mí</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+
+    <div class="hero__head">
+      <h1 class="hero__title">Oriol Roige, front-end</h1>
+      <p class="hero__sub">Diseño y programo webs a mano, del primer boceto al código publicado.</p>
+    </div>
+
+    <div class="strip" data-strip>
+      <ul class="strip__row" tabindex="0" aria-label="Capturas de las dos webs; desplaza a los lados">
+        <li class="strip__frame" data-title="Duermevela · Portada con vídeo y reloj de la noche"><img src="img/duermevela-hero-720.webp" srcset="img/duermevela-hero-720.webp 720w, img/duermevela-hero-1440.webp 1440w" sizes="(max-width: 700px) 80vw, 560px" width="720" height="450" alt="Portada de Duermevela: vídeo nocturno de un tren y la barra con el nombre y el botón de reservar"></li>
+        <li class="strip__frame" data-title="Albar · La portada es un albarán firmado"><img src="img/albar-hero-720.webp" srcset="img/albar-hero-720.webp 720w, img/albar-hero-1440.webp 1440w" sizes="(max-width: 700px) 80vw, 560px" width="720" height="450" alt="Portada de Albar: un albarán blanco con fecha, origen y sello de recibido sobre un vídeo de tomates"></li>
+        <li class="strip__frame" data-title="Duermevela · Salidas de esta noche, con la cuenta atrás"><img src="img/duermevela-salidas-720.webp" srcset="img/duermevela-salidas-720.webp 720w, img/duermevela-salidas-1440.webp 1440w" sizes="(max-width: 700px) 80vw, 560px" width="720" height="450" alt="Tablero de salidas de Duermevela con seis trenes y el tiempo que falta para cada uno" loading="lazy"></li>
+        <li class="strip__frame" data-title="Albar · En temporada, mes a mes"><img src="img/albar-temporada-720.webp" srcset="img/albar-temporada-720.webp 720w, img/albar-temporada-1440.webp 1440w" sizes="(max-width: 700px) 80vw, 560px" width="720" height="450" alt="Sección En temporada de Albar con un caqui, su finca y los kilómetros" loading="lazy"></li>
+        <li class="strip__frame" data-title="Duermevela · A bordo, cuatro maneras de pasar la noche"><img src="img/duermevela-abordo-720.webp" srcset="img/duermevela-abordo-720.webp 720w, img/duermevela-abordo-1440.webp 1440w" sizes="(max-width: 700px) 80vw, 560px" width="720" height="450" alt="Sección A bordo de Duermevela con fotos de cabina y coche-restaurante" loading="lazy"></li>
+        <li class="strip__frame" data-title="Albar · De la mata al lineal en cinco horas"><img src="img/albar-origen-720.webp" srcset="img/albar-origen-720.webp 720w, img/albar-origen-1440.webp 1440w" sizes="(max-width: 700px) 80vw, 560px" width="720" height="450" alt="El albarán de entrada de Albar junto a una foto de tomates en la mata" loading="lazy"></li>
+        <li class="strip__frame" data-title="Duermevela · Dónde despertar, con el mapa de la red"><img src="img/duermevela-rutas-720.webp" srcset="img/duermevela-rutas-720.webp 720w, img/duermevela-rutas-1440.webp 1440w" sizes="(max-width: 700px) 80vw, 560px" width="720" height="450" alt="Sección de rutas de Duermevela con un tranvía de Lisboa y la lista de ciudades" loading="lazy"></li>
+        <li class="strip__frame" data-title="Albar · Catálogo con filtros y precio por kilo"><img src="img/albar-catalogo-720.webp" srcset="img/albar-catalogo-720.webp 720w, img/albar-catalogo-1440.webp 1440w" sizes="(max-width: 700px) 80vw, 560px" width="720" height="450" alt="Catálogo de Albar con filtros por mostrador y la cuadrícula de productos" loading="lazy"></li>
+        <li class="strip__frame" data-title="Duermevela · Tarifas como una carta"><img src="img/duermevela-tarifas-720.webp" srcset="img/duermevela-tarifas-720.webp 720w, img/duermevela-tarifas-1440.webp 1440w" sizes="(max-width: 700px) 80vw, 560px" width="720" height="450" alt="Tarifas de Duermevela en dos columnas, dormir y a bordo" loading="lazy"></li>
+        <li class="strip__frame" data-title="Albar · Tiendas con horario y mapa"><img src="img/albar-tiendas-720.webp" srcset="img/albar-tiendas-720.webp 720w, img/albar-tiendas-1440.webp 1440w" sizes="(max-width: 700px) 80vw, 560px" width="720" height="450" alt="Página de tiendas de Albar: Ponzano, su horario de hoy y un plano de la calle" loading="lazy"></li>
+        <li class="strip__frame" data-title="Duermevela · Una noche, dos ciudades"><img src="img/duermevela-noche-720.webp" srcset="img/duermevela-noche-720.webp 720w, img/duermevela-noche-1440.webp 1440w" sizes="(max-width: 700px) 80vw, 560px" width="720" height="450" alt="Sección Una noche, dos ciudades de Duermevela con titular en Bodoni" loading="lazy"></li>
+        <li class="strip__frame" data-title="Albar · Sin albarán, no entra"><img src="img/albar-manifiesto-720.webp" srcset="img/albar-manifiesto-720.webp 720w, img/albar-manifiesto-1440.webp 1440w" sizes="(max-width: 700px) 80vw, 560px" width="720" height="450" alt="Manifiesto de Albar con cuatro cifras grandes: 1961, 212, 94 km y 48 h" loading="lazy"></li>
+        <li class="strip__frame" data-title="Duermevela · Antes de subir, las dudas"><img src="img/duermevela-dudas-720.webp" srcset="img/duermevela-dudas-720.webp 720w, img/duermevela-dudas-1440.webp 1440w" sizes="(max-width: 700px) 80vw, 560px" width="720" height="450" alt="Preguntas frecuentes de Duermevela" loading="lazy"></li>
+        <li class="strip__frame" data-title="Albar · Albar en casa"><img src="img/albar-entrega-720.webp" srcset="img/albar-entrega-720.webp 720w, img/albar-entrega-1440.webp 1440w" sizes="(max-width: 700px) 80vw, 560px" width="720" height="450" alt="Sección de reparto a domicilio de Albar" loading="lazy"></li>
+      </ul>
+      <p class="strip__caption" aria-live="polite" data-strip-caption>Duermevela · Portada con vídeo y reloj de la noche</p>
+    </div>
+
+    <div class="hero__foot">
+      <p class="hero__lead">Dos webs completas: una compañía de trenes nocturnos y una cadena de mercados de origen.</p>
+      <a class="button" href="#proyectos">Ver los proyectos</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- Proyectos: una banda por web, tira de capturas y caso de estudio -->
+    <section class="work" id="proyectos" aria-labelledby="proyectos-h">
+      <h2 class="h-head" id="proyectos-h" data-reveal>Dos proyectos</h2>
+
+      <article class="project" id="duermevela" aria-labelledby="duermevela-h">
+        <div class="slides" data-reveal>
+          <ul class="slides__row" tabindex="0" aria-label="Capturas de Duermevela; desplaza a los lados">
+            <li class="slide slide--video">
+              <video src="media/duermevela-scroll.mp4" poster="media/duermevela-scroll.webp" muted loop playsinline preload="none" width="1280" height="800" aria-label="Recorrido en vídeo por la portada de Duermevela, de arriba abajo" data-autoplay></video>
+            </li>
+            <li class="slide"><img src="img/duermevela-salidas-1440.webp" srcset="img/duermevela-salidas-720.webp 720w, img/duermevela-salidas-1440.webp 1440w" sizes="(max-width: 700px) 78vw, 73vw" width="1440" height="900" alt="Tablero de salidas: seis trenes de esta noche y cuánto falta para cada uno" loading="lazy"></li>
+            <li class="slide"><img src="img/duermevela-noche-1440.webp" srcset="img/duermevela-noche-720.webp 720w, img/duermevela-noche-1440.webp 1440w" sizes="(max-width: 700px) 78vw, 73vw" width="1440" height="900" alt="Una noche, dos ciudades: el viaje contado hora a hora con fotos del tren" loading="lazy"></li>
+            <li class="slide"><img src="img/duermevela-abordo-1440.webp" srcset="img/duermevela-abordo-720.webp 720w, img/duermevela-abordo-1440.webp 1440w" sizes="(max-width: 700px) 78vw, 73vw" width="1440" height="900" alt="A bordo: cabina privada, coche-restaurante, litera de cuatro y desayuno" loading="lazy"></li>
+            <li class="slide"><img src="img/duermevela-rutas-1440.webp" srcset="img/duermevela-rutas-720.webp 720w, img/duermevela-rutas-1440.webp 1440w" sizes="(max-width: 700px) 78vw, 73vw" width="1440" height="900" alt="Dónde despertar: Lisboa, París, Madrid, Milán, Zúrich y Barcelona" loading="lazy"></li>
+            <li class="slide"><img src="img/duermevela-tarifas-1440.webp" srcset="img/duermevela-tarifas-720.webp 720w, img/duermevela-tarifas-1440.webp 1440w" sizes="(max-width: 700px) 78vw, 73vw" width="1440" height="900" alt="Tarifas de literas, cabinas y servicios a bordo" loading="lazy"></li>
+            <li class="slide"><img src="img/duermevela-cierre-1440.webp" srcset="img/duermevela-cierre-720.webp 720w, img/duermevela-cierre-1440.webp 1440w" sizes="(max-width: 700px) 78vw, 73vw" width="1440" height="900" alt="Cierre de la portada: Elige tu noche" loading="lazy"></li>
+          </ul>
+        </div>
+
+        <div class="facts" data-reveal>
+          <div class="facts__name">
+            <h3 id="duermevela-h">Duermevela <span>· portada de marca</span></h3>
+            <p class="facts__links"><a class="arrow" href="https://oroige.github.io/duermevela-trenes-nocturnos/" data-site="duermevela">Abrir la web</a> <a href="https://github.com/oroige/duermevela-trenes-nocturnos">Ver el código</a></p>
+          </div>
+          <p><span>Hecha con</span> HTML, CSS y JavaScript, sin frameworks</p>
+          <p><span>Año</span> 2026</p>
+          <p><span>Tipo</span> Proyecto personal, marca ficticia</p>
+        </div>
+
+        <div class="case" data-reveal>
+          <div>
+            <h4>El encargo</h4>
+            <p>La portada de una compañía inventada de trenes nocturnos con coche-cama entre Madrid, Barcelona, Lisboa, París, Milán y Zúrich. Tenía que vender una idea en una frase: te duermes en una ciudad y despiertas en otra.</p>
+          </div>
+          <div>
+            <h4>Lo que decidí</h4>
+            <p>La página sigue una noche de viaje. Un reloj en la barra avanza mientras bajas, el tablero calcula cuánto falta para cada tren de hoy y el trayecto se cuenta hora a hora. Bodoni Moda para las ciudades, como en los rótulos de estación; fondo casi negro y un solo naranja de señal para reservar.</p>
+          </div>
+          <div>
+            <h4>Cómo está hecha</h4>
+            <p>Unos 77 KB de código escrito a mano entre HTML, CSS y JavaScript. Vídeo de fondo que se puede pausar, mapa de la red dibujado en SVG, menú propio en el móvil y una versión sin movimiento para quien lo tiene desactivado en su sistema.</p>
+          </div>
+        </div>
+      </article>
+
+      <article class="project" id="albar" aria-labelledby="albar-h">
+        <div class="slides" data-reveal>
+          <ul class="slides__row" tabindex="0" aria-label="Capturas de Albar; desplaza a los lados">
+            <li class="slide slide--video">
+              <video src="media/albar-scroll.mp4" poster="media/albar-scroll.webp" muted loop playsinline preload="none" width="1280" height="800" aria-label="Recorrido en vídeo por la portada de Albar, de arriba abajo" data-autoplay></video>
+            </li>
+            <li class="slide"><img src="img/albar-origen-1440.webp" srcset="img/albar-origen-720.webp 720w, img/albar-origen-1440.webp 1440w" sizes="(max-width: 700px) 78vw, 73vw" width="1440" height="900" alt="El albarán de entrada que se rellena mientras sigues una caja de tomates" loading="lazy"></li>
+            <li class="slide"><img src="img/albar-catalogo-1440.webp" srcset="img/albar-catalogo-720.webp 720w, img/albar-catalogo-1440.webp 1440w" sizes="(max-width: 700px) 78vw, 73vw" width="1440" height="900" alt="Catálogo con filtros por mostrador, etiquetas y precio por kilo" loading="lazy"></li>
+            <li class="slide"><img src="img/albar-tiendas-1440.webp" srcset="img/albar-tiendas-720.webp 720w, img/albar-tiendas-1440.webp 1440w" sizes="(max-width: 700px) 78vw, 73vw" width="1440" height="900" alt="Tiendas: dirección, si está abierta ahora, horario y plano" loading="lazy"></li>
+            <li class="slide"><img src="img/albar-temporada-1440.webp" srcset="img/albar-temporada-720.webp 720w, img/albar-temporada-1440.webp 1440w" sizes="(max-width: 700px) 78vw, 73vw" width="1440" height="900" alt="En temporada: el producto del mes con su finca, el pueblo y los kilómetros" loading="lazy"></li>
+            <li class="slide"><img src="img/albar-mostradores-1440.webp" srcset="img/albar-mostradores-720.webp 720w, img/albar-mostradores-1440.webp 1440w" sizes="(max-width: 700px) 78vw, 73vw" width="1440" height="900" alt="Los ocho mostradores de la tienda" loading="lazy"></li>
+            <li class="slide"><img src="img/albar-carta-1440.webp" srcset="img/albar-carta-720.webp 720w, img/albar-carta-1440.webp 1440w" sizes="(max-width: 700px) 78vw, 73vw" width="1440" height="900" alt="Nosotros: una carta de la nieta de la fundadora" loading="lazy"></li>
+          </ul>
+        </div>
+
+        <div class="facts" data-reveal>
+          <div class="facts__name">
+            <h3 id="albar-h">Albar <span>· web de cuatro páginas</span></h3>
+            <p class="facts__links"><a class="arrow" href="https://oroige.github.io/albar-mercado-de-origen/" data-site="albar">Abrir la web</a> <a href="https://github.com/oroige/albar-mercado-de-origen">Ver el código</a></p>
+          </div>
+          <p><span>Hecha con</span> HTML, CSS, JavaScript y Vite</p>
+          <p><span>Lighthouse en móvil</span> 99–100 en las cuatro categorías</p>
+          <p><span>Tipo</span> Proyecto personal, marca ficticia</p>
+        </div>
+
+        <div class="case" data-reveal>
+          <div>
+            <h4>El encargo</h4>
+            <p>Una cadena inventada de siete supermercados de producto de origen, fundada en 1961. Su norma: ningún producto entra sin el albarán firmado por quien lo cultiva. Inicio, catálogo, tiendas y una página de historia.</p>
+          </div>
+          <div>
+            <h4>Lo que decidí</h4>
+            <p>El albarán es el sistema visual. La portada es uno, con la fecha de hoy, el sello y la firma; más abajo se rellena casilla a casilla mientras sigues una caja de tomates de las 05:40 a las 11:20. Barlow Condensed para rotular, blanco de papel y azul de bolígrafo.</p>
+          </div>
+          <div>
+            <h4>Cómo está hecha</h4>
+            <p>Vite con plantillas propias para las cuatro páginas. El catálogo filtra por mostrador y etiquetas y compara el precio por kilo; cada tienda dice si está abierta ahora. Un script con Sharp y ffmpeg prepara imágenes AVIF y WebP en tres tamaños y el vídeo.</p>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <!-- Lo vivo: las dos webs funcionando dentro de un móvil -->
+    <section class="live" id="pruebalas" aria-labelledby="pruebalas-h">
+      <div class="live__phone" data-reveal>
+        <div class="phone">
+          <iframe class="phone__screen" title="Duermevela funcionando a tamaño de móvil" src="about:blank" data-src-site="duermevela" loading="lazy" width="390" height="780"></iframe>
+        </div>
+      </div>
+      <div class="live__text">
+        <h2 class="h-head" id="pruebalas-h" data-reveal>Pruébalas aquí</h2>
+        <p class="live__lead" data-reveal>Las dos webs funcionando dentro de un móvil. Desplázate dentro de la pantalla, toca y filtra.</p>
+        <div class="switch" role="group" aria-label="Web que se muestra" data-reveal>
+          <button type="button" class="switch__btn" aria-pressed="true" data-show="duermevela">Duermevela</button>
+          <button type="button" class="switch__btn" aria-pressed="false" data-show="albar">Albar</button>
+        </div>
+        <div class="tries" data-reveal>
+          <ul class="tries__list" data-tries="duermevela">
+            <li>Mira el reloj de la barra: avanza de las 21:40 a la mañana mientras bajas.</li>
+            <li>El tablero de salidas cuenta el tiempo que falta para cada tren de hoy.</li>
+            <li>Abre el menú: en el móvil es una lista propia, no la del escritorio encogida.</li>
+            <li>Pausa el vídeo de la portada con el botón de abajo.</li>
+          </ul>
+          <ul class="tries__list" data-tries="albar" hidden>
+            <li>Baja hasta el albarán de entrada y mira cómo se rellena casilla a casilla.</li>
+            <li>En el catálogo, filtra por Km 0 o En oferta y compara el precio por kilo.</li>
+            <li>En tiendas, cada una dice si está abierta ahora y a qué hora cierra.</li>
+            <li>Cambia de mes en En temporada para ver qué se cosecha.</li>
+          </ul>
+        </div>
+        <p class="live__open" data-reveal><a class="arrow" href="https://oroige.github.io/duermevela-trenes-nocturnos/" data-open target="_blank" rel="noopener">Abrir Duermevela en otra pestaña</a></p>
+      </div>
+    </section>
+
+    <!-- Sobre mí -->
+    <section class="about" id="sobre-mi" aria-labelledby="sobre-mi-h">
+      <h2 class="h-head about__h" id="sobre-mi-h" data-reveal>Cómo trabajo</h2>
+      <dl class="about__facts" data-reveal>
+        <div><dt>Herramientas</dt><dd>HTML, CSS, JavaScript, Vite, Sharp, ffmpeg, Lighthouse</dd></div>
+        <div><dt>Código</dt><dd><a href="https://github.com/oroige">github.com/oroige</a></dd></div>
+        <div><dt>Correo</dt><dd><a href="mailto:oriol.roige25@lacetania.cat" data-email>oriol.roige25@lacetania.cat</a></dd></div>
+      </dl>
+      <div class="about__text">
+        <p class="statement" data-reveal><strong>Empiezo por el contenido,</strong> no por la plantilla, y busco una pieza de la marca que sirva de interfaz: el tablero de una estación, el albarán de un tendero.</p>
+        <p class="statement statement--soft" data-reveal>Luego lo programo a mano y lo mido: que cargue rápido, que funcione con teclado y que los textos suenen a alguien.</p>
+      </div>
+    </section>
+
+    <!-- Contacto -->
+    <section class="contact" id="contacto" aria-labelledby="contacto-h">
+      <div class="marquee" aria-hidden="true">
+        <div class="marquee__track">
+          <img src="img/duermevela-m-hero-390.webp" width="390" height="844" alt="">
+          <img src="img/albar-catalogo-720.webp" width="720" height="450" alt="">
+          <img src="img/albar-m-origen-390.webp" width="390" height="844" alt="">
+          <img src="img/duermevela-rutas-720.webp" width="720" height="450" alt="">
+          <img src="img/albar-m-hero-390.webp" width="390" height="844" alt="">
+          <img src="img/duermevela-salidas-720.webp" width="720" height="450" alt="">
+          <img src="img/duermevela-m-salidas-390.webp" width="390" height="844" alt="">
+          <img src="img/albar-tiendas-720.webp" width="720" height="450" alt="">
+          <img src="img/albar-m-temporada-390.webp" width="390" height="844" alt="">
+          <img src="img/duermevela-abordo-720.webp" width="720" height="450" alt="">
+          <img src="img/duermevela-m-rutas-390.webp" width="390" height="844" alt="">
+          <img src="img/albar-origen-720.webp" width="720" height="450" alt="">
+          <img src="img/albar-m-catalogo-390.webp" width="390" height="844" alt="">
+          <img src="img/duermevela-tarifas-720.webp" width="720" height="450" alt="">
+        </div>
+      </div>
+      <div class="contact__body">
+        <h2 class="h-head" id="contacto-h" data-reveal>Hablemos</h2>
+        <form class="mail" action="mailto:oriol.roige25@lacetania.cat" method="get" enctype="text/plain" data-mail data-reveal>
+          <label class="mail__cell">
+            <span class="sr">Tu nombre</span>
+            <input name="nombre" autocomplete="name" placeholder="Tu nombre">
+          </label>
+          <label class="mail__cell">
+            <span class="sr">Tu empresa</span>
+            <input name="empresa" autocomplete="organization" placeholder="Tu empresa">
+          </label>
+          <button class="mail__send" type="submit">Escribirme</button>
+        </form>
+        <p class="mail__note" data-reveal>Se abre tu correo con el mensaje empezado. También puedes escribir directamente a <a href="mailto:oriol.roige25@lacetania.cat" data-email>oriol.roige25@lacetania.cat</a>.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <div class="tile tile--statement">
+      <p>Webs pensadas desde el contenido, programadas a mano y medidas.</p>
+      <p class="tile__small">© 2026 Oriol Roige. Duermevela y Albar son marcas inventadas; sus fotos y vídeos tienen la licencia de Unsplash y Pexels.</p>
+    </div>
+    <nav class="tile tile--nav" aria-label="Pie">
+      <ul>
+        <li><a href="#proyectos">Proyectos</a></li>
+        <li><a href="#pruebalas">Pruébalas</a></li>
+        <li><a href="#sobre-mi">Sobre mí</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+    <div class="tile tile--code">
+      <p>Este portfolio también está hecho a mano: HTML, CSS y unas líneas de JavaScript.</p>
+      <a class="arrow" href="https://github.com/oroige/oroige.github.io">Su código</a>
+    </div>
+    <div class="tile tile--mail">
+      <a href="mailto:oriol.roige25@lacetania.cat" data-email>oriol.roige25@lacetania.cat</a>
+    </div>
+    <p class="tile tile--word" aria-hidden="true">Oriol Roige</p>
+    <a class="tile tile--go" href="mailto:oriol.roige25@lacetania.cat" data-email>
+      <span>Escríbeme</span>
+      <svg viewBox="0 0 48 48" width="48" height="48" aria-hidden="true"><path d="M10 38 38 10M16 10h22v22" fill="none" stroke="currentColor" stroke-width="4"/></svg>
+    </a>
+  </footer>
+
+  <script src="main.js" defer></script>
+</body>
+</html>
